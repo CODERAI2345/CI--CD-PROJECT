@@ -10,3 +10,11 @@ resource "aws_instance" "first" {
     Name = "HelloWorld"
   }
 }
+
+resource "aws_s3_bucket" "tfstate" {
+  bucket = "infra-tf-state-bucket"
+
+  tags = {
+    Name = "Terraform State"
+  }
+}
