@@ -12,7 +12,7 @@ resource "aws_instance" "first" {
 }
 
 resource "aws_s3_bucket" "tf-state" {
-  bucket = "metro-card"
+  bucket = "metro-card-token"
 
   tags = {
     Name = "Terraform State"
