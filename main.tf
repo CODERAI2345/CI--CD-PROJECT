@@ -11,8 +11,8 @@ resource "aws_instance" "first" {
   }
 }
 
-resource "aws_s3_bucket" "tfstate" {
-  bucket = "infra-tf-state-bucket"
+resource "aws_s3_bucket" "tf-state" {
+  bucket = "infra-bucket"
 
   tags = {
     Name = "Terraform State"
